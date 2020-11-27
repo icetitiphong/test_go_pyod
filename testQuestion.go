@@ -1,17 +1,16 @@
 package testQuestion
 
 // abcde = ["ab","cd","e*"]
-func Question1(string) []string {
-	questions := "abcde"
+func Question1(text string) []string {
 	answer := []string{}
 
-	if len(questions)%2 != 0 {
-		questions = questions + "*"
+	if len(text)%2 != 0 {
+		text = text + "*"
 	}
 
-	for i := 0; i < len(questions); i = i + 2 {
+	for i := 0; i < len(text); i = i + 2 {
 
-		x := questions[i : i+2]
+		x := text[i : i+2]
 		answer = append(answer, x)
 
 	}
